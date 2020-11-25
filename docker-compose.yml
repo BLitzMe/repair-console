@@ -1,0 +1,28 @@
+version: "3.7"
+networks:
+  repc:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+services:
+  #setup back end#
+  server:
+    build: ./RepairConsole
+    networks:
+      repc:
+        ipv4_address: 172.20.0.5
+    expose:
+      - 5001
+    command: dotnet run
+
+  #set up front end#
+  client:
+    build: ./repairConsoleFE
+    networks:
+      repc:
+        ipv4_address: 172.20.0.6
+    ports:
+      - 8090:8080
+    links:
+      - server
+    command: npm run serve
