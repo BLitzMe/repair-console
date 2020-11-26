@@ -6,15 +6,13 @@ WORKDIR /app
 # copy both 'package.json' and 'package-lock.json' (if available)
 COPY package*.json ./
 
-#install vue cli
-RUN npm install -g @vue/cli
-
 # install project dependencies
-RUN npm install && npm audit fix && npm run build
+RUN npm install && npm audit fix 
 
 # copy project files and folders to the current working directory (i.e. 'app' folder)
 COPY . .
 
+RUN npm run build
 
 FROM nginx:alpine
 
