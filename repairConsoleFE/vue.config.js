@@ -7,5 +7,6 @@ module.exports = {
         changeOrigin: true
       }
     }
-  }
+  },
+  assetsDir: "repair-console"
 };
