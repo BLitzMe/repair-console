@@ -31,7 +31,7 @@ export default new Vuex.Store({
   actions: {
     getUserDevices({ commit }) {
       axios
-        .get(this.$api + "/devices", {
+        .get("https://172.20.0.5:5001/api/devices", {
           httpAgent: new https.Agent({
             rejectUnauthorized: false
           })
