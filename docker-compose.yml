@@ -21,8 +21,9 @@ services:
     networks:
       repc:
         ipv4_address: 172.20.0.6
+    expose:
+      - 80
     ports:
-      - 8090:8080
+      - 8090:80
     links:
       - server
-    command: npm run serve
