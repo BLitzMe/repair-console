@@ -7,7 +7,7 @@ import axios from "axios";
 
 Vue.config.productionTip = false;
 
-Vue.prototype.$api = "http://172.20.0.5:5001/api";
+Vue.prototype.$api = "https://172.20.0.5:5001/api";
 Vue.prototype.$axios = axios;
 
 new Vue({
