@@ -8,5 +8,5 @@ module.exports = {
       }
     }
   },
-  assetsDir: ""
+  assetsDir: "repair-console"
 };
