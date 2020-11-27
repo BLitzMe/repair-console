@@ -7,14 +7,13 @@ const routes = [
   {
     path: "/",
     name: "Aufträge",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/aufträge-tabelle.vue")
+    component: () => import(/* webpackChunkName: "about" */ "../views/aufträge-tabelle.vue")
   }
 ];
 
 const router = new VueRouter({
   mode: "history",
-  base: process.env.BASE_URL,
+  base: process.env.BASE_URL + "/repair-console/",
   routes
 });
 
