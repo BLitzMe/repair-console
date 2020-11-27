@@ -5,7 +5,7 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
+    path: "/repair-console/",
     name: "Aufträge",
     component: () => import(/* webpackChunkName: "about" */ "../views/aufträge-tabelle.vue")
   }
