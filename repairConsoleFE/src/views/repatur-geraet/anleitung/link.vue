@@ -6,7 +6,7 @@
       </v-col>
 
       <v-col cols="4">
-        <v-btn text :title="`${rating} sterne`" class="mr-9" @click="sendRating">
+        <v-btn text :title="`${link.averageRating} sterne`" class="mr-9" @click="sendRating">
           <v-rating hover small length="5" v-model="link.averageRating" />
         </v-btn>
       </v-col>
