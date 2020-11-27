@@ -12,7 +12,7 @@ services:
       repc:
         ipv4_address: 172.20.0.5
     ports:
-      - 5001:5001
+      - 5001:80
     command: dotnet run
 
   #set up front end#
