@@ -20,7 +20,7 @@ services:
     build: ./repairConsoleFE
     networks:
       repc:
-        ipv4_address: 172.20.0.1
+        ipv4_address: 172.20.0.6
     ports:
       - 8090:80
     links:
