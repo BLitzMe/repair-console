@@ -8,6 +8,5 @@ module.exports = {
       }
     }
   },
-  assetsDir: "repair-console",
   publicPath: process.env.NODE_ENV === "production" ? "/repair-console/" : "/"
 };
